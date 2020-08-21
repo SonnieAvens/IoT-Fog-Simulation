@@ -1,5 +1,5 @@
 # IoT-Fog-Simulation
-dissertation repository for all code work towards a DPS dissertation
+## Dissertation repository for all code work towards a DPS dissertation
 Title: Scheduling Heterogeneous IoT Tasks in Fog Cloud Model for QoS aware Semantic based Services Discovery
 ====================================================================================
 Install the required software in your system
