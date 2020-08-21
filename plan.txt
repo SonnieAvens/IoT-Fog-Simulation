@@ -1,0 +1,64 @@
+Title: Scheduling Heterogeneous IoT Tasks in Fog Cloud Model for QoS aware Semantic based Services Discovery
+
+
+Implementation Plan
+
+ 
+
+Step1: Our proposed system has the following three layers are considered
+
+·         IoT layer
+
+·         Edge layer
+
+·         Cloud
+
+ 
+
+Step2: The implementations of IoT layer have the IoT users and devices. It has following the process are considered
+
+            2.1 Users – IoT users to access the stored data from the cloud.
+
+            2.2 Devices – The IoT devices collect the data and transfer via fog to the cloud.  
+
+ 
+
+Step3: Next we apply the Edge layer by using two-tier task managers and fog devices. In this layer, we considered as the following process,      
+
+3.1 a) First Tier – The received tasks from the IoT users are entered into queue1 and scheduled by using Policy-based AHP scheduling. Then it is assigned to the nearest fog. It is based on the task deadline, QoS, and response time.
+
+       b) Second Tier – Using QoS based Double Q-learning algorithm that receives tasks from queue 2 and applies the IoT devices. It’s considered the metrics are load, task energy, and completion time.
+
+3.2 The fog is composed of Class-based Splay tree algorithm, using which the requested service will be in search.
+
+ 
+
+Step4: Then the cloud collected heterogeneous data is formed into ontology from the ontology of each class a dependency graph is constructed as per the semantic similarity using Switchable RNN Ontology Matching. The threshold defines the number of arrived search tasks. If the number of requests is beyond the threshold then RNN activates GRU otherwise LSTM will be used.
+
+ 
+
+Step5: Finally, our proposed system is evaluated in terms of the following parameters,
+
+·         Number of Tasks with respect to,
+
+o   Response time
+
+o   Success rate
+
+o   Satisfaction rate
+
+o   Service latency
+
+·         Number of fogs with respect to Network Usage
+
+·         Accuracy in retrieval
+
+Software Requirements
+
+ 
+
+·         JDK 1.8
+
+·         Netbeans 8.2
+
+·         Windows7 (Ultimate- 32bit)
